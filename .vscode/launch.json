@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Odoo 18: Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/odoo/odoo-bin",
+            "args": [
+                "-c",
+                "${workspaceFolder}/odoo.conf",
+                "--dev=all"
+            ],
+            "python": "${workspaceFolder}/odoo-venv/bin/python",
+            "console": "integratedTerminal"
+        }
+    ]
+}

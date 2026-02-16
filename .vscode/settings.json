@@ -1,0 +1,72 @@
+{
+    // Python Configuration
+    "python.defaultInterpreterPath": "${workspaceFolder}/odoo-venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/odoo"
+    ],
+
+    // Files to watch for changes
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/__pycache__/**": true,
+        "**/*.pyc": true,
+        "**/.venv/**": true,
+        "**/odoo-venv/**": true
+    },
+
+    // Files to exclude from search
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.venv": true,
+        "**/odoo-venv": true
+    },
+
+    // Files associations
+    "files.associations": {
+        "*.py": "python",
+        "*.xml": "xml",
+        "*.csv": "csv",
+        "*.js": "javascript",
+        "*.css": "css",
+        "*.html": "html",
+        "*.json": "json",
+        "*.yml": "yaml",
+        "*.yaml": "yaml"
+    },
+
+    // Auto-save configuration
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    // Editor configuration
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    // Terminal configuration
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/odoo:${workspaceFolder}"
+    },
+
+    // Debug configuration
+    "debug.console": "integratedTerminal",
+    "debug.inlineValues": true,
+
+    // XML formatting
+    "[xml]": {
+        "editor.tabSize": 4
+    },
+
+    // Task settings
+    "task.reveal": "always",
+    "task.showOutput": "always"
+}
