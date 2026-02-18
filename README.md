@@ -91,7 +91,7 @@ HTTP service (werkzeug) running on localhost:8069
 | Field           | Value      |
 | --------------- | ---------- |
 | Master Password | `admin`    |
-| Database Name   | `odoo_dev` |
+| Database Name   | `odoo` |
 | Email (Login)   | `admin`    |
 | Password        | `admin`    |
 
